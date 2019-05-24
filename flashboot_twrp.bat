@@ -1,0 +1,9 @@
+@echo off
+echo [1/3] Flashing TWRP to A...
+"C:\path\fastboot.exe" flash boot_a "C:\meta\twrp-3.3.0-0-pioneer.img"
+echo [2/3] Flashing TWRP to B...
+"C:\path\fastboot.exe" flash boot_b "C:\meta\twrp-3.3.0-0-pioneer.img"
+echo [3/3] Rebooting...
+"C:\path\fastboot.exe" reboot
+echo Done! Press any key to exit.
+pause>nul
