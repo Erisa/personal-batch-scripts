@@ -27,7 +27,7 @@ echo [5/11] Installing LineageOS...
 "C:\path\adb.exe" shell twrp remountrw system
 "C:\path\adb.exe" shell twrp sideload
 "C:\path\adb.exe" wait-for-sideload
-"C:\path\adb.exe" sideload "C:\meta\lineage-16.0-20190523-nightly-pioneer-signed.zip"
+"C:\path\adb.exe" sideload "C:\meta\lineage-16.0-20190530-nightly-pioneer-signed.zip"
 
 echo [6/11] Rebooting TWRP due to system remount bug...
 "C:\path\adb.exe" wait-for-recovery
