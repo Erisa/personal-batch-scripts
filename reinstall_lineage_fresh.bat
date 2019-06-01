@@ -19,7 +19,7 @@ echo Waiting for device to reappear. Do not touch anything when TWRP loads.
 
 REM echo [6/10] Pushing install files..
 REM "C:\path\adb.exe" shell mkdir -v /sdcard/meta
-REM "C:\path\adb.exe" push "C:\meta\lineage-16.0-20190523-nightly-pioneer-signed.zip" /sdcard/meta/
+REM "C:\path\adb.exe" push "C:\meta\lineage-16.0-20190601-nightly-pioneer-signed.zip" /sdcard/meta/
 REM "C:\path\adb.exe" push "C:\meta\Magisk-v19.1.zip" /sdcard/meta/
 REM "C:\path\adb.exe" push "C:\meta\open_gapps-arm64-9.0-nano-20190426.zip" /sdcard/meta/
 
@@ -27,7 +27,7 @@ echo [5/11] Installing LineageOS...
 "C:\path\adb.exe" shell twrp remountrw system
 "C:\path\adb.exe" shell twrp sideload
 "C:\path\adb.exe" wait-for-sideload
-"C:\path\adb.exe" sideload "C:\meta\lineage-16.0-20190530-nightly-pioneer-signed.zip"
+"C:\path\adb.exe" sideload "C:\meta\lineage-16.0-20190601-nightly-pioneer-signed.zip"
 
 echo [6/11] Rebooting TWRP due to system remount bug...
 "C:\path\adb.exe" wait-for-recovery
