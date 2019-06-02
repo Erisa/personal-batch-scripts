@@ -40,8 +40,8 @@ echo Waiting for device to reappear. Do not touch anything when TWRP loads.
 echo [7/11] Installing Magisk...
 "C:\path\adb.exe" shell twrp sideload
 "C:\path\adb.exe" wait-for-sideload
-"C:\path\adb.exe" sideload "C:\meta\Magisk-v19.1.zip"
-REM "C:\path\adb.exe" shell twrp install "/sdcard/meta/Magisk-v19.1.zip"
+"C:\path\adb.exe" sideload "C:\meta\Magisk-v19.2.zip"
+REM "C:\path\adb.exe" shell twrp install "/sdcard/meta/Magisk-v19.2.zip"
 
 echo [8/11] Pushing meta files...
 "C:\path\adb.exe" wait-for-recovery
