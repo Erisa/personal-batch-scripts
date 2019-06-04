@@ -9,19 +9,10 @@ echo [2/10] Clearing system...
 echo [3/11] Flashing TWRP to boot...
 "C:\path\fastboot.exe" flash boot_a "C:\meta\twrp-3.3.0-0-pioneer.img"
 
-REM echo [4/10] Flashing TWRP to B...
-REM "C:\path\fastboot.exe" flash boot_b "C:\meta\twrp-3.3.0-0-pioneer.img"
-
 echo [4/11] Rebooting...
 "C:\path\fastboot.exe" reboot
 echo Waiting for device to reappear. Do not touch anything when TWRP loads.
 "C:\path\adb.exe" wait-for-recovery
-
-REM echo [6/10] Pushing install files..
-REM "C:\path\adb.exe" shell mkdir -v /sdcard/meta
-REM "C:\path\adb.exe" push "C:\meta\lineage-16.0-20190603-nightly-pioneer-signed.zip" /sdcard/meta/
-REM "C:\path\adb.exe" push "C:\meta\Magisk-v19.1.zip" /sdcard/meta/
-REM "C:\path\adb.exe" push "C:\meta\open_gapps-arm64-9.0-nano-20190426.zip" /sdcard/meta/
 
 echo [5/11] Installing LineageOS...
 "C:\path\adb.exe" shell twrp remountrw system
@@ -41,7 +32,6 @@ echo [7/11] Installing Magisk...
 "C:\path\adb.exe" shell twrp sideload
 "C:\path\adb.exe" wait-for-sideload
 "C:\path\adb.exe" sideload "C:\meta\Magisk-v19.1.zip"
-REM "C:\path\adb.exe" shell twrp install "/sdcard/meta/Magisk-v19.1.zip"
 
 echo [8/11] Pushing meta files...
 "C:\path\adb.exe" wait-for-recovery
@@ -52,7 +42,6 @@ echo [9/11] Installing OpenGAPPS...
 "C:\path\adb.exe" shell twrp sideload
 "C:\path\adb.exe" wait-for-sideload
 "C:\path\adb.exe" sideload "C:\meta\open_gapps-arm64-9.0-nano-20190426.zip"
-REM "C:\path\adb.exe" shell twrp install /sdcard/meta/open_gapps-arm64-9.0-nano-20190426.zip
 
 echo [10/11] Enabling ADB...
 "C:\path\adb.exe" wait-for-recovery
