@@ -24,7 +24,6 @@ echo [6/11] Rebooting TWRP due to system remount bug...
 "C:\path\adb.exe" wait-for-recovery
 "C:\path\adb.exe" reboot bootloader
 "C:\path\fastboot.exe" boot "C:\meta\twrp-3.3.0-0-pioneer.img"
-"C:\path\fastboot.exe" reboot
 echo Waiting for device to reappear. Do not touch anything when TWRP loads.
 "C:\path\adb.exe" wait-for-recovery
 
