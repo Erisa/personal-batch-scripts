@@ -1,13 +1,14 @@
 @echo off
 echo [1/10] Clearing data...
-"C:\path\fastboot.exe" set_active a
 "C:\path\fastboot.exe" -w
 
 echo [2/10] Clearing system...
 "C:\path\fastboot.exe" erase system
 
 echo [3/9] Flashing TWRP to boot...
-"C:\path\fastboot.exe" flash boot_a "C:\meta\twrp-3.3.0-0-pioneer.img"
+"C:\path\fastboot.exe" flash boot_a "C:\meta\twrp-3.3.0-0-pioneer.img
+
+"C:\path\fastboot.exe" set_active a
 
 echo [4/9] Rebooting...
 "C:\path\fastboot.exe" reboot
