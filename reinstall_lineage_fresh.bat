@@ -31,7 +31,8 @@ echo Waiting for device to reappear. Do not touch anything when TWRP loads.
 echo [7/9] Installing Magisk...
 "C:\path\adb.exe" shell twrp sideload
 "C:\path\adb.exe" wait-for-sideload
-"C:\path\adb.exe" sideload "C:\meta\Magisk-v19.1.zip"
+
+"C:\path\adb.exe" sideload "C:\meta\Magisk-v19.2.zip"
 
 echo [8/9] Installing OpenGAPPS...
 "C:\path\adb.exe" shell twrp remountrw system
